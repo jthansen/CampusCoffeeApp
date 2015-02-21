@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
-
+    //HELLO
     // All Static variables
     // Database Version
     private static final int DATABASE_VERSION = 1;
