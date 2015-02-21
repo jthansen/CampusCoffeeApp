@@ -131,7 +131,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-
+     //hi
     // Getting contacts Count
     public int getContactsCount() {
         String countQuery = "SELECT  * FROM " + TABLE_CONTACTS;
