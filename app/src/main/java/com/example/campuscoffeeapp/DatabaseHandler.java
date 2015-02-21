@@ -119,22 +119,22 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
         // updating row
-        return db.update(TABLE_SPECIALTY_DRINKS, values, KEY_ID + " = ?",
-                new String[]{String.valueOf(specialtyDrink.getID())});
+        return db.update(TABLE_SPECIALTY_DRINKS, values,KEY_DRINK_NAME + " = ?",
+                new String[]{String.valueOf(specialtyDrink.getName())});
     }
 
     // Deleting single contact
-    public void deleteContact(Contact contact) {
+    public void deleteContact(SpecialtyDrinkDBEntry specialtyDrink) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
-                new String[]{String.valueOf(contact.getID())});
+        db.delete(TABLE_SPECIALTY_DRINKS, KEY_DRINK_NAME + " = ?",
+                new String[]{String.valueOf(specialtyDrink.getName())});
         db.close();
     }
 
      //hi
     // Getting contacts Count
     public int getContactsCount() {
-        String countQuery = "SELECT  * FROM " + TABLE_CONTACTS;
+        String countQuery = "SELECT  * FROM " + TABLE_SPECIALTY_DRINKS;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(countQuery, null);
         cursor.close();
