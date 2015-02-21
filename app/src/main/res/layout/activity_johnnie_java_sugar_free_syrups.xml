@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.campuscoffeeapp.JohnnieJavaSugarFreeSyrups" >
+
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/sugar_free_syrups"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:onClick="homePage"
+        android:text="@string/home"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_banana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_almond"
+        android:layout_below="@+id/button_almond"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/chocolate"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_hazelnut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_banana"
+        android:layout_below="@+id/button_banana"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/hazelnut"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_raspberry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_hazelnut"
+        android:layout_below="@+id/button_hazelnut"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/raspberry"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_vanilla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_raspberry"
+        android:layout_below="@+id/button_raspberry"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/vanilla"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_almond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_menu"
+        android:layout_below="@+id/text_menu"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/caramel"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.campuscoffeeapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JohnnieJavaHome" >
+        </activity>
+        <activity
+            android:name=".ClemensPerkHome"
+            android:label="@string/title_activity_clemens_perk_home" >
+        </activity>
+        <activity
+            android:name=".ClemensPerkMenu"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".Basic"
+            android:label="@string/title_activity_coffee" >
+        </activity>
+        <activity
+            android:name=".Tea"
+            android:label="@string/title_activity_tea" >
+        </activity>
+        <activity
+            android:name=".EspressoDrinks"
+            android:label="@string/title_activity_espresso_drinks" >
+        </activity>
+        <activity
+            android:name=".SpecialtyDrinks"
+            android:label="@string/title_activity_specialty_drinks" >
+        </activity>
+        <activity
+            android:name=".Smoothies"
+            android:label="@string/title_activity_smoothies" >
+        </activity>
+        <activity
+            android:name=".NonEspressoDrinks"
+            android:label="@string/title_activity_non_espresso_drinks" >
+        </activity>
+        <activity
+            android:name=".Chillerz"
+            android:label="@string/title_activity_chillerz" >
+        </activity>
+        <activity
+            android:name=".BasicWithDescription"
+            android:label="@string/title_activity_basic_with_description" >
+        </activity>
+        <activity
+            android:name=".MenuJohnnieJava"
+            android:label="@string/title_activity_menu_johnnie_java" >
+        </activity>
+        <activity
+            android:name=".BrewCrew"
+            android:label="@string/title_activity_brew_crew" >
+        </activity>
+        <activity
+            android:name=".DailyOffersClemensPerk"
+            android:label="@string/title_activity_daily_offers_clemens_perk" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaStaff"
+            android:label="@string/title_activity_johnnie_java_staff" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaOffers"
+            android:label="@string/title_activity_johnnie_java_offers" >
+        </activity>
+        <activity
+            android:name=".ClemensAbout"
+            android:label="@string/title_activity_clemens_about" >
+        </activity>
+        <activity
+            android:name=".JohnnieAbout"
+            android:label="@string/title_activity_johnnie_about" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaBasic"
+            android:label="@string/title_activity_johnnie_java_basic2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaBasicDescription"
+            android:label="@string/title_activity_johnnie_java_basic_with_description" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaChillers"
+            android:label="@string/title_activity_johnnie_java_chillers2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaDrinks"
+            android:label="@string/title_activity_johnnie_java_drinks2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaFlavoredSyrups"
+            android:label="@string/title_activity_johnnie_java_flavored_syrups2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaOrganicSyrups"
+            android:label="@string/title_activity_johnnie_java_organic_syrups2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaSmoothies"
+            android:label="@string/title_activity_johnnie_java_smoothies2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaSpecialtyDrinks"
+            android:label="@string/title_activity_johnnie_java_specialty_drinks2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaSugarFreeSyrups"
+            android:label="@string/title_activity_johnnie_java_sugar_free_syrups2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaSyrups"
+            android:label="@string/title_activity_johnnie_java_syrups2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaTeas"
+            android:label="@string/title_activity_johnnie_java_teas2" >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".JohnnieJavaMenu"
+            android:label="@string/title_activity_johnnie_java_menu" >
+        </activity>
+    </application>
+
+</manifest>

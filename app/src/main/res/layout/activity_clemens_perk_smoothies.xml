@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.campuscoffeeapp.ClemensPerkSmoothies" >
+
+    <TextView
+        android:id="@+id/specialtyDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/smoothies"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b21b1b"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:onClick="homePage"
+        android:text="@string/home"
+        android:textColor="#b21b1b"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_JohnnieAutumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/specialtyDrinks"
+        android:layout_alignRight="@+id/specialtyDrinks"
+        android:layout_below="@+id/specialtyDrinks"
+        android:layout_marginTop="102dp"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="tropicalSunsetPage"
+        android:text="@string/tropical_sunset"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_JohnnieAutumn"
+        android:layout_alignRight="@+id/button_JohnnieAutumn"
+        android:layout_centerVertical="true"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="berrieBenniePage"
+        android:text="@string/berrie_bennie"
+        android:textStyle="bold" />
+
+</RelativeLayout>

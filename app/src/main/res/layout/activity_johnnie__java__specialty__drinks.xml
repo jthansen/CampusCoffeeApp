@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.campuscoffeeapp.JohnnieJavaSpecialtyDrinks" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/specialtyDrinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="SPECIALTY DRINKS"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_JohnnieAutumn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/specialtyDrinks"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="johnnieAutumn"
+                android:text="JOHNNIE AUTUMN"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_TheLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_JohnnieAutumn"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button_JohnnieAutumn"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="theLink"
+                android:text="THE LINK"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_TurtleMocha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_TheLink"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button_TheLink"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="turtleMocha"
+                android:text="TURTLE MOCHA"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_SextonSunrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_TurtleMocha"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button_TurtleMocha"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="sextonSunrise"
+                android:text="SEXTON SUNRISE"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buton_ChapelWalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_SextonSunrise"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button_SextonSunrise"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="chapelWalk"
+                android:text="CHAPEL WALK"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_AbbyRoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/buton_ChapelWalk"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="abbyRoad"
+                android:text="ABBY ROAD"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_TheEcho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_AbbyRoad"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button_AbbyRoad"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="theEcho"
+                android:text="THE ECHO"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_AndesMintExtreme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_TheEcho"
+                android:layout_alignRight="@+id/button_TheEcho"
+                android:layout_below="@+id/button_TheEcho"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:onClick="andesMintExtreme"
+                android:text="ANDES MINT EXTREME"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:onClick="home"
+                android:text="@string/home"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

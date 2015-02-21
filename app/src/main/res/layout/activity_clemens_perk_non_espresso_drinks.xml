@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.campuscoffeeapp.ClemensPerkNonEspressoDrinks" >
+
+    <Button
+        android:id="@+id/button_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_cappuccino"
+        android:layout_below="@+id/TextView01"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="chaiTeaPage"
+        android:text="@string/chai_tea_latte"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_cappuccino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_description"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="streamerPage"
+        android:text="@string/streamer"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_12oz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_cappuccino"
+        android:layout_below="@+id/button_cappuccino"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="hotChocolatePage"
+        android:text="@string/hot_chocolate"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_depth_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_12oz"
+        android:layout_below="@+id/button_12oz"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="appleCiderPage"
+        android:text="@string/apple_cider"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_mocha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_depth_charge"
+        android:layout_below="@+id/button_depth_charge"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="energyDrinkPage"
+        android:text="@string/energy_drink"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_cold_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_mocha"
+        android:layout_below="@+id/button_mocha"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="bottledPage"
+        android:text="@string/bottled_drinks"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_chillerz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_cold_press"
+        android:layout_below="@+id/button_cold_press"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="italianSodaPage"
+        android:text="@string/italian_soda"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_description"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/non_espresso_drinks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b21b1b"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_TurtleMocha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:onClick="homePage"
+        android:text="@string/home"
+        android:textColor="#b21b1b"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

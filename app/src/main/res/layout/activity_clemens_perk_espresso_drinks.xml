@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.campuscoffeeapp.ClemensPerkEspressoDrinks" >
+
+    <TextView
+        android:id="@+id/specialtyDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/espresso_drinks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b21b1b"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:onClick="homePage"
+        android:text="@string/home"
+        android:textColor="#b21b1b"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_cappuccino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_JohnnieAutumn"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="cappuccinoPage"
+        android:text="@string/cappuccino"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_12oz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button_cappuccino"
+        android:layout_below="@+id/button_cappuccino"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="americanoPage"
+        android:text="@string/americano"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_depth_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_12oz"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="depthChargePage"
+        android:text="@string/depth_charge"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_mocha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_depth_charge"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="mochaPage"
+        android:text="@string/mocha"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_cold_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_mocha"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="coldPressPage"
+        android:text="@string/cold_press"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_JohnnieAutumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/specialtyDrinks"
+        android:layout_marginTop="22dp"
+        android:background="#b21b1b"
+        android:gravity="center"
+        android:onClick="lattePage"
+        android:text="@string/latte"
+        android:textStyle="bold" />
+
+</RelativeLayout>
