@@ -103,7 +103,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 specialtyDrinkList.add(drink);
             } while (cursor.moveToNext());
         }
-
+//new push
         // return contact list
         return specialtyDrinkList;
     }
