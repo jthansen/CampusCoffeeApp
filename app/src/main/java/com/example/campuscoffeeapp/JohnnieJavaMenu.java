@@ -40,52 +40,76 @@ public class JohnnieJavaMenu extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void specialtyDrinksPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaSpecialtyDrinks.class);
-		//start next activity
-		startActivity(intent);
-	}
-	
-	public void drinksPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaDrinks.class);
-		//start next activity
-		startActivity(intent);
-	}
-	
-	public void chillersPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaChillers.class);
-		//start next activity
-		startActivity(intent);
-	}
-	
-	public void smoothiesPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaSmoothies.class);
-		//start next activity
-		startActivity(intent);
-	}
-	
-	public void teasPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaTeas.class);
-		//start next activity
-		startActivity(intent);
-	}
-	
-	public void syrupsPage(View view){
-		//create next activity
-		Intent intent = new Intent(this, JohnnieJavaSyrups.class);
-		//start next activity
-		startActivity(intent);
-	}
-	public void homePage(View view){
-		//create new activity
-		Intent intent = new Intent(this, MainActivity.class);
-		//start next activity
-		startActivity(intent);
-	}
+
+    public void coffeePage(View view){
+        //create next activity
+        Intent intent = new Intent(this, ClemensPerkBasic.class);
+        //prices for 12oz and 16oz and the title
+        String price12 = "$1.40  ";
+        String price16 = "$1.85  ";
+        String title = "COFFEE";
+        //send data to next page
+        intent.putExtra(EXTRA_MESSAGE12, price12);
+        intent.putExtra(EXTRA_MESSAGE16, price16);
+        intent.putExtra(EXTRA_MESSAGE_TITLE, title);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void teaPage(View view){
+        //create next activity
+        Intent intent = new Intent(this, ClemensPerkBasic.class);
+        //prices for 12oz and 16oz and the title
+        String price12 = "$1.40  ";
+        String price16 = "$1.85  ";
+        String title = "TEA";
+        //send data to next page
+        intent.putExtra(EXTRA_MESSAGE12, price12);
+        intent.putExtra(EXTRA_MESSAGE16, price16);
+        intent.putExtra(EXTRA_MESSAGE_TITLE, title);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void espressoDrinksPage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkEspressoDrinks.class);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void specialtyDrinksPage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkSpecialtyDrinks.class);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void smoothiesPage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkSmoothies.class);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void nonespressoDrinksPage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkNonEspressoDrinks.class);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void chillerzPage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkChillerz.class);
+        //start next activity
+        startActivity(intent);
+    }
+
+    public void homePage(View view){
+        //create new activity
+        Intent intent = new Intent(this, ClemensPerkHome.class);
+        //start next activity
+        startActivity(intent);
+    }
 }

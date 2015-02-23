@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import com.example.campuscoffeeapp.FeedReaderContract.*;
+
 
 public class SpecialtyDrinks extends ActionBarActivity {
 	public static String EXTRA_MESSAGE12 = "12ozPrice";

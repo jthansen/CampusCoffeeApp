@@ -13,11 +13,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	public static String EXTRA_MESSAGE16 = "16ozPrice";
 	public static String EXTRA_MESSAGE_TITLE = "Title";
 	public static String EXTRA_MESSAGE_DESCRIPTION = "Description";
+    private DrinksDatabase db;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_johnnie__java__specialty__drinks);
+        db = new DrinksDatabase();
+        db.onCreate(savedInstanceState);
 	}
 
 	@Override
@@ -39,13 +42,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void johnnieAutumn(View view){
+        DrinkDBEntry drink = db.getDrink("JOHNNIE AUTUMN");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "JOHNNIE AUTUMN";
-		String description = "Honey and Cinnamon Latte";
+		String price12 = drink.get12ozPrice();
+		String price16 = drink.get12ozPrice();
+		String title = drink.getName();
+		String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -56,13 +60,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void theLink(View view){
+        DrinkDBEntry drink = db.getDrink("THE LINK");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "THE LINK";
-		String description = "White Chocolate and Chocolate Mocha";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -73,13 +78,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void turtleMocha(View view){
+        DrinkDBEntry drink = db.getDrink("TURTLE MOCHA");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "TURTLE MOCHA";
-		String description = "Chocolate and Caramel Mocha";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -90,13 +96,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void sextonSunrise(View view){
+        DrinkDBEntry drink = db.getDrink("SEXTON SUNRISE");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "SEXTON SUNRISE";
-		String description = "Caramel and Vanilla Late";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -107,13 +114,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void chapelWalk(View view){
+        DrinkDBEntry drink = db.getDrink("CHAPEL WALK");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "CHAPEL WALK";
-		String description = "Hazelnut and Caramel Latte";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -124,13 +132,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void abbyRoad(View view){
+        DrinkDBEntry drink = db.getDrink("ABBY ROAD");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "ABBY ROAD";
-		String description = "Chocolate and Raspberry Mocha";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -141,13 +150,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void theEcho(View view){
+        DrinkDBEntry drink = db.getDrink("THE ECHO");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "THE ECHO";
-		String description = "White Chocolate, Vanilla, and Almond Mocha";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);
@@ -158,13 +168,14 @@ public class JohnnieJavaSpecialtyDrinks extends ActionBarActivity {
 	}
 	
 	public void andesMintExtreme(View view){
+        DrinkDBEntry drink = db.getDrink("ANDES MINT EXTREME");
 		//create next activity
 		Intent intent = new Intent(this, JohnnieJavaBasicDescription.class);
 		//prices for 12oz and 16oz and the title
-		String price12 = "$3.25  ";
-		String price16 = "$4.00  ";
-		String title = "ANDES MINT EXTREME";
-		String description = "Chocolate Mocha with Peppermint";
+        String price12 = drink.get12ozPrice();
+        String price16 = drink.get12ozPrice();
+        String title = drink.getName();
+        String description = drink.getDescription();
 		//send data to next 
 		intent.putExtra(EXTRA_MESSAGE12, price12);
 		intent.putExtra(EXTRA_MESSAGE16, price16);

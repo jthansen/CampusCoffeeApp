@@ -16,11 +16,11 @@ public class JohnnieJavaBasicDescription extends ActionBarActivity {
 		setContentView(R.layout.activity_johnnie__java__basic__with__description);
 		Intent intent = getIntent();
 		// get the 12oz, 16oz, and title information from the coffee menu class
-		String message12 = intent.getStringExtra(ClemensPerkCoffeeMenu.EXTRA_MESSAGE12);
-		String message16 = intent.getStringExtra(ClemensPerkCoffeeMenu.EXTRA_MESSAGE16);
-		String messageDescription = intent.getStringExtra(ClemensPerkCoffeeMenu.EXTRA_MESSAGE_DESCRIPTION);
+		String message12 = intent.getStringExtra(JohnnieJavaMenu.EXTRA_MESSAGE12);
+		String message16 = intent.getStringExtra(JohnnieJavaMenu.EXTRA_MESSAGE16);
+		String messageDescription = intent.getStringExtra(JohnnieJavaMenu.EXTRA_MESSAGE_DESCRIPTION);
 		String messageTitle = intent
-				.getStringExtra(ClemensPerkCoffeeMenu.EXTRA_MESSAGE_TITLE);
+				.getStringExtra(JohnnieJavaMenu.EXTRA_MESSAGE_TITLE);
 		// place 12oz price in app display
 		Button button12 = (Button) findViewById(R.id.button_12oz_price);
 		// if there is a 12oz price for the drink:
